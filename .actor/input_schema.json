@@ -1,0 +1,44 @@
+{
+    "title": "River Water Level Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "stateCode": {
+            "title": "State",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Two-letter US state code to survey all active monitoring sites in, e.g. \"CO\". Ignored if \"siteNumbers\" is set."
+        },
+        "siteNumbers": {
+            "title": "Site numbers",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Comma-separated USGS site numbers to check instead of a whole state, e.g. \"07227420,09404200\". Takes priority over \"stateCode\" if both are set."
+        },
+        "parameter": {
+            "title": "Parameter",
+            "type": "string",
+            "editor": "select",
+            "description": "Which reading to fetch. Gauge height is water surface elevation (best for flood/high-water risk); streamflow (discharge) is volume of water passing the site per second.",
+            "enum": ["gaugeHeight", "streamflow"],
+            "enumTitles": ["Gauge height (feet)", "Streamflow / discharge (cubic feet per second)"],
+            "default": "gaugeHeight"
+        },
+        "minValue": {
+            "title": "Minimum value",
+            "type": "number",
+            "editor": "number",
+            "description": "Only return sites whose latest reading is at or above this value. Leave blank to return all sites, highest reading first."
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of sites to return, highest reading first.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 200
+        }
+    },
+    "required": []
+}

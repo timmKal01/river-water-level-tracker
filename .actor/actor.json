@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "river-water-level-tracker",
+    "title": "River Water Level Tracker — USGS Real-Time Gauge Data",
+    "description": "Get real-time river/stream gauge height and streamflow readings from official USGS monitoring stations, by state or specific site numbers. Sorted highest-first for fast high-water spotting.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}
