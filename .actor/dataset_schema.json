@@ -1,0 +1,58 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "siteNumber",
+                    "siteName",
+                    "latitude",
+                    "longitude",
+                    "parameter",
+                    "unit",
+                    "value",
+                    "dateTime"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "siteNumber": {
+                        "label": "Site number",
+                        "format": "text"
+                    },
+                    "siteName": {
+                        "label": "Site name",
+                        "format": "text"
+                    },
+                    "latitude": {
+                        "label": "Latitude",
+                        "format": "number"
+                    },
+                    "longitude": {
+                        "label": "Longitude",
+                        "format": "number"
+                    },
+                    "parameter": {
+                        "label": "Parameter",
+                        "format": "text"
+                    },
+                    "unit": {
+                        "label": "Unit",
+                        "format": "text"
+                    },
+                    "value": {
+                        "label": "Value",
+                        "format": "number"
+                    },
+                    "dateTime": {
+                        "label": "Date time",
+                        "format": "date"
+                    }
+                }
+            }
+        }
+    }
+}
