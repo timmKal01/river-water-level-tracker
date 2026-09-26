@@ -7,7 +7,9 @@
             "title": "State",
             "type": "string",
             "editor": "textfield",
-            "description": "Two-letter US state code to survey all active monitoring sites in, e.g. \"CO\". Ignored if \"siteNumbers\" is set."
+            "description": "Two-letter US state code to survey all active monitoring sites in, e.g. \"CO\". Ignored if \"siteNumbers\" is set.",
+            "prefill": "CO",
+            "default": "CO"
         },
         "siteNumbers": {
             "title": "Site numbers",
