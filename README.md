@@ -1,12 +1,24 @@
-# River Water Level Tracker — USGS Real-Time Gauge Data
+# River Level Tracker: USGS Real-Time Gauges
 
-Get real-time river and stream gauge readings from official USGS
-monitoring stations, by state or by specific site numbers. Results are
-sorted highest-reading-first, so the sites closest to flood/high-water
-risk surface at the top without needing a separate flood-stage lookup.
+Current river and stream levels for flood risk checks, insurance, field
+operations, logistics and agriculture. Pick a state or specific USGS gauge
+sites and get the latest official gauge height or streamflow from each one,
+highest first, so the sites nearest high water show up at the top.
 
-Built for field-operations, logistics, agriculture, and insurance teams
-who need current water-level conditions, not a forecast.
+## What you get
+
+One row per gauge site:
+
+- Site name, number and coordinates
+- The latest gauge height (feet) or streamflow (cubic feet per second), with its time
+- Sorted highest reading first
+
+## Who this is for
+
+- **Insurance and flood risk teams** checking current river levels near insured property.
+- **Field operations and construction crews** working near rivers and streams.
+- **Logistics teams** watching for high water on their routes and crossings.
+- **Farms and agriculture** keeping an eye on water levels for irrigation and field access.
 
 ## Input
 

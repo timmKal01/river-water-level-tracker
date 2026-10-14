@@ -2,7 +2,7 @@
     "actorSpecification": 1,
     "name": "river-water-level-tracker",
     "title": "River Level Tracker: USGS Real-Time Gauges",
-    "description": "Get real-time river/stream gauge height and streamflow readings from official USGS monitoring stations, by state or specific site numbers. Sorted highest-first for fast high-water spotting.",
+    "description": "Current river and stream levels from official USGS gauges, by state or site number, highest first so high water stands out. Gauge height or streamflow per site, for flood risk, insurance, agriculture, logistics and field operations teams.",
     "version": "0.1",
     "meta": {
         "templateId": "custom-no-proxy"
