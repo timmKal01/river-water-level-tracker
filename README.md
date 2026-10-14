@@ -83,5 +83,5 @@ search returns 0 sites or 200.
 
 ## Related products
 
-- [US Weather Forecast & Alerts Tracker](https://github.com/timmKal01/us-weather-tracker) — forecasts and active NWS alerts, the atmospheric-conditions counterpart to this actor's water-level data
-- [Disaster Declaration Tracker](https://github.com/timmKal01/disaster-declaration-tracker) — official FEMA disaster declarations, for after a flood is already declared
+- [US Weather Forecast & Alerts API (NWS)](https://apify.com/m_ctim/us-weather-tracker): forecasts and active NWS alerts, the atmospheric-conditions counterpart to this actor's water-level data
+- [FEMA Disaster Declaration Tracker by State](https://apify.com/m_ctim/disaster-declaration-tracker): official FEMA disaster declarations, for after a flood is already declared
