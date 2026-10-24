@@ -1,3 +1,7 @@
+// Some public APIs refuse requests that identify themselves only as Node's default "node" user agent (data.cms.gov
+// started doing so in October 2026), so every request says which tool is asking and where to find it.
+const USER_AGENT = 'river-water-level-tracker/0.1 (+https://apify.com/m_ctim/river-water-level-tracker)';
+
 const BASE_URL = 'https://waterservices.usgs.gov/nwis/iv/';
 
 const PARAMETER_CODES = {
@@ -26,7 +30,7 @@ async function fetchWithRetry(url) {
     for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
         let res;
         try {
-            res = await fetch(url, { headers: { Connection: 'close' } });
+            res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Connection: 'close' } });
         } catch (err) {
             lastError = err;
             if (attempt < MAX_ATTEMPTS) await sleep(1000 * 2 ** (attempt - 1));
